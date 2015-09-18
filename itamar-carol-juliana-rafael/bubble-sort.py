@@ -4,12 +4,12 @@ n = len(lista)
 # aqui o comando for varre a lista para todos os elementos.
 print "Lista original: " + str(lista)
 for i in range(0, n-1, 1):
-	# para cada interação em i o 'for' interno faz todas as possiveis interações com j.
+	# para cada interacao em i o for interno faz todas as possiveis interacaos com j.
 	for j in range(i+1, n, 1):
-		# para cada elemento da lista[i] com o elemento da lista[j] a condição é testada, se for verdadeira ele executa os comandos abaixo.
+		# para cada elemento da lista[i] com o elemento da lista[j] a condicao e testada, se for verdadeira ele executa os comandos abaixo.
 		if lista[i] > lista[j]:
 			temp = lista[i]
 			lista[i] = lista[j]
 			lista[j] = temp
-# o comando printa, ele escreve a ultima interação da lista, ou seja, a lista organizada.
+# o comando printa, ele escreve a ultima interacao da lista, ou seja, a lista organizada.
 print "Lista em ordem crescente: " + str(lista)
