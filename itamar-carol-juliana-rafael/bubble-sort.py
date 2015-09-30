@@ -32,6 +32,18 @@ for i in range(0, n-1, 1):
             plt.savefig("fig/bubble-troca-{}.png".format(Numcont) )
             plt.close()
             Numcont += 1
+        x = range(0, 20, 1)
+        y = lista
+        plt.figure()
+        plt.plot(x, y, 'ok')
+        plt.plot(i, lista[i], 'or')
+        plt.plot(j, lista[j], 'ob')
+        plt.title('Interacao {}'.format(Cont))
+        plt.xlabel('Indice')
+        plt.ylabel('Valor')
+        plt.savefig("fig/bubble-it-{}.png".format(Cont) )
+        plt.close()
+        Cont += 1
 # neste grupo de comandos obtivemos um grafico diferente para cada variacao de j que causa mudanca no grafico.
 
 print ("Lista em ordem crescente: ",lista)
