@@ -47,11 +47,10 @@ for i in range(0, n-1, 1):
 # neste grupo de comandos obtivemos um grafico diferente para cada variacao de j que causa mudanca no grafico.
 
 print ("Lista em ordem crescente: ",lista)
+CMV = lista[15:20]
+CMV.reverse()
+print  ("Cinco maiores valores: ", CMV)
 print ("Cinco menores valores:" , lista[0:5])
-a = lista[15:20]
-a.reverse()
-print  ("Cinco maiores valores: ", a)
-    
 x = range(0, 20, 1)
 y = [11, 18, 3, 1, 16, 12, 6, 19, 5, 0, 14, 4, 17, 9, 13, 7, 10, 15, 2, 8]
 plt.figure()
